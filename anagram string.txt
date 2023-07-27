@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char a[200],b[200];
+    int i,j,count=0,l1,l2;
+    printf("enter the string:");
+    gets(a);
+    printf("enter the second string:");
+    gets(b);
+    l1=strlen(a);
+    l2=strlen(b);
+    for (i=0;i<l1;i++)
+    {
+        for (j=0;j<l1;j++)
+        {
+            if (a[i]==b[j])
+            count++;
+        }
+    }
+    if (count==l1)
+    printf("string is anagram:");
+    else 
+    printf("string is not anagram:");
+}
+
+
+    

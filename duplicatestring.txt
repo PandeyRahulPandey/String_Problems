@@ -1,0 +1,23 @@
+//program to remove adjacent duplicate elements from a strig.
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char a[100],i,j,n;
+    printf("enter the string:");
+     gets(a);
+     n=strlen(a);
+    for (i=0;i<n;i++)
+    {
+        if (a[i]==a[i+1])
+        {
+            for (j=i+1;j<n;j++)
+            {
+                a[j]=a[j+1];
+            }
+            n--;
+        }
+    }
+    puts(a);
+
+}
